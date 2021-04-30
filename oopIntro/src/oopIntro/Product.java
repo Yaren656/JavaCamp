@@ -2,22 +2,74 @@ package oopIntro;
 
 public class Product {
 	
-	public Product() {  //constructor
-		System.out.println("Ben çalýþtým");
-	}
-	
-	
-	public Product(int id, String name, double unitPrice, String detail) {
-		this();
-		this.id=id;
-		this.name=name;
-		this.unitPrice=unitPrice;
-		this.detail=detail;
-	}
-	
+	//encapsulation
 	int id;
 	String name;
 	double unitPrice;
 	String detail;
+	double discount;
+	double unitPriceAfterDiscount;
+	
+	public Product() {
+		
+	}
+	
+	public Product(int id, String name, double unitPrice, String detail, double discount, 
+			double unitPriceAfterDiscount) {  //constructor
+		super();
+		this.id = id;
+		this.name = name;
+		this.unitPrice = unitPrice;
+		this.detail = detail;
+		this.discount = discount;
+		this.unitPriceAfterDiscount = unitPriceAfterDiscount;
+	}
+
+	public int getId() {  //C#'daki proplardaki g&s'ler Java'da get ve setler metotlarla yapýlýr.
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getUnitPrice() {
+		return unitPrice;
+	}
+
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public double getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(double discount) {
+		this.discount = discount;
+	}
+
+	public double getUnitPriceAfterDiscount() {
+		return unitPriceAfterDiscount;
+	}
+	
+	
+	
 
 }
